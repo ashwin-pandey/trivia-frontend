@@ -1,10 +1,18 @@
 import './App.css';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { 
+  BrowserRouter as Router, 
+  Link, 
+  Route, 
+  Routes 
+} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import Home from './components/common/Home';
-import About from './components/common/About';
-import Contact from './components/common/Contact';
+import Home from './pages/common/Home';
+import About from './pages/common/About';
+import Contact from './pages/common/Contact';
+import Questions from './pages/questions/Questions';
+import Settings from './pages/questions/Settings';
+import FinalScore from './pages/questions/FinalScore';
 
 function App() {
   return (
@@ -29,6 +37,9 @@ function App() {
           <Route exact path='/' element={< Home />}></Route>
           <Route exact path='/about' element={< About />}></Route>
           <Route exact path='/contact' element={< Contact />}></Route>
+          <Route exact path='/questions' element={< Questions />}></Route>
+          <Route exact path='/settings' element={< Settings />}></Route>
+          <Route exact path='/score' element={< FinalScore />}></Route>
         </Routes>
 
         {/* footer */}
