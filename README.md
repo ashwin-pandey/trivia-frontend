@@ -1,1 +1,1 @@
-# trivia-frontend
+# Trivia
