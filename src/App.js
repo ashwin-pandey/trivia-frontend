@@ -1,4 +1,3 @@
-import './App.css';
 import { 
   BrowserRouter as Router, 
   Link, 
@@ -17,7 +16,7 @@ import FinalScore from './pages/questions/FinalScore';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="">
         {/* header */}
         <div className='navbar'>
           <ul className="nav mx-auto">
