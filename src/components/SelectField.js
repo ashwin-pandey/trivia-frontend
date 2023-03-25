@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
   
 const SelectField = (props) => {
-    const { label } = props;
+    const { label, options } = props;
     const [value, setValue] = useState('');
 
-    const handleChange = () => {}
+    const handleChange = (e) => {
+        setValue(e.target.value);
+    }
     return (
         <div>
-            <div className='form-inline form-horizontal'>
+            <div className='form-inline form-horizontal mt-3'>
                 <label htmlFor={label}><b>{label}</b></label>
                 <div className="form-group">
                     <select className='form-control' value={value} label={label} onChange={handleChange}>
-                        <option>Option1</option>
-                        <option>Option2</option>
-                        <option>Option3</option>
-                        <option>Option4</option>
+                        {options.map(({ id, name }) => (
+                            <option value={id}>{name}</option>
+                        ))}
                     </select>
                 </div>
             </div>
