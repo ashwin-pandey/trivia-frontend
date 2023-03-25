@@ -13,11 +13,11 @@ function Home (){
     return (
         <div className='home-page container'>
             <div className='row'>
-                <div className="col-lg-6 col-12 mx-auto">
+                <div className="col-lg-6 col-12 mx-auto text-center">
                     <h1 className='page-header'>Trivia</h1>
                     <div className="card">
                         <div className="card-body">
-                            <p>Welcome to this Trivia application.</p>
+                            <p>Welcome to the Trivia application.</p>
                             <button className='btn btn-secondary' onClick={settingsRoute}>Begin!</button>
                         </div>
                     </div>
