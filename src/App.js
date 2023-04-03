@@ -16,9 +16,12 @@ import FinalScore from './pages/questions/FinalScore';
 function App() {
   return (
     <Router>
-      <div className="">
+      <div className="" style={{ 
+        backgroundImage: `url('restaurant.png')`,
+        height: `100vh`
+       }}>
         {/* header */}
-        <div className='navbar'>
+        <div className='navbar' style={{ backgroundColor: `#ffffff` }}>
           <ul className="nav mx-auto">
             <li className='nav-item'>
               <Link className='nav-link' to='/'>Home</Link>
