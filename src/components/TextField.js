@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { handleAmountChange } from '../redux/actions';
   
 const TextField = (props) => {
 
-    const handleChange = () => {}
+    const dispatch = useDispatch();
+    const handleChange = (e) => {
+        console.log('Amount of questions: ', e.target.value);
+        dispatch(handleAmountChange(e.target.velue));
+    }
     return (
         <div>
             <div className='form-inline form-horizontal mt-3'>
