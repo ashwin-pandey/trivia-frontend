@@ -14,8 +14,8 @@ function Home (){
         <div className='home-page container'>
             <div className='row'>
                 <div className="col-lg-6 col-12 mx-auto text-center">
-                    <h1 className='page-header'>Trivia</h1>
-                    <div className="card">
+                    <h1 className='page-header'><img src="t-key.png" className='trivia-image pb-2' width={50} height={50} alt="" srcset="" /> Trivia</h1>
+                    <div className="card pt-5 pb-5">
                         <div className="card-body">
                             <p>Welcome to the Trivia application.</p>
                             <button className='btn btn-secondary' onClick={settingsRoute}>Begin!</button>
